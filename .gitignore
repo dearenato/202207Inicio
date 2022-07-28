@@ -1,1 +1,2 @@
-**/*.pycgit
+**/*.pyc
+app.db
