@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Meu Blog</title>
+        <title> {% block title %}{% endblock %} - Meu Blog </title>
         <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     </head>
 
@@ -8,7 +8,7 @@
         <h1>Meu Blog</h1>
         <nav>
         </nav>
-        <section class="content"></section>
+        <section class="content">
             {% block content %}
             {% endblock %}
     </section>
